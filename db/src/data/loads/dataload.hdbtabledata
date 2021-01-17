@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "cal_view_demo.db.data::PERFORMANCE",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "cal_view_demo.db.data.loads::performance.csv",
+        "has_header": true,
+        "dialect": "HANA",
+        "type_config": {
+          "delimiter": ","
+        }
+      }
+    },
+     {
+      "target_table": "cal_view_demo.db.data::SALARY",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "cal_view_demo.db.data.loads::salary.csv",
+        "has_header": true,
+        "dialect": "HANA",
+        "type_config": {
+          "delimiter": ","
+        }
+      }
+    }
+  ]
+}
